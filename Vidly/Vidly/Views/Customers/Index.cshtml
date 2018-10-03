@@ -1,0 +1,16 @@
+﻿@model Vidly.ViewModels.CustomerViewModel
+
+@{
+    ViewBag.Title = "Customers";
+}
+
+<h2>Customers</h2>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>Customers</th>
+    </tr>
+        @foreach (var customer in @Model.Customers)
+        {
+            <tr><td>@customer.Name</td></tr>
+        }
+</table>
